@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 Jeff Sharkey, http://jsharkey.org/
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:layout_marginLeft="5dp"
+	android:layout_marginRight="5dp">
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:focusable="true">
+	 	<ImageView
+	 		 android:id="@+id/widget_container"
+			 android:adjustViewBounds="true" 
+			 android:layout_height="fill_parent"
+			 android:layout_width="fill_parent"
+			 android:scaleType="fitXY"
+			 android:background="@drawable/bg"/>
+		
+	   <RelativeLayout
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="23dip"
+	        >
+	    
+			<LinearLayout
+	       		android:id="@+id/widget_content"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="fill_parent"
+		        android:layout_marginTop="0dip"
+		        android:layout_marginBottom="6dip"
+				android:orientation="vertical"
+				android:layout_marginLeft="5dip" 
+				android:layout_marginRight="5dip" 
+		        >
+			</LinearLayout>
+		</RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="2dp"
+		android:layout_marginRight="2dp"
+		android:id="@+id/apptitle">
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="23dp"
+			android:layout_alignParentTop="true"
+			android:background="#000000">
+			<ImageView
+				android:id="@+id/conf"
+				android:layout_width="wrap_content"
+				android:layout_height="12dp"
+				android:gravity="center_vertical"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="7dp"
+				android:layout_marginTop="7dp"
+				android:src="@drawable/config"/>
+			<TextView
+				android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:id="@+id/wTitle"
+		        android:text="bookmarks" 
+		        android:textColor="#aaa"
+		        android:paddingTop="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:textSize="12dp"
+		        android:shadowColor="#000"
+				android:shadowDx="-1.0"
+				android:shadowDy="1.0"
+				android:shadowRadius="1.0"/>
+			<ImageView
+				android:id="@+id/add"
+				android:layout_width="wrap_content"
+				android:layout_height="12dp"
+				android:gravity="center_vertical"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="2dp"
+				android:layout_marginTop="7dp"
+				android:src="@drawable/add"/>
+		</RelativeLayout>
+	</RelativeLayout>
+						
+</RelativeLayout>

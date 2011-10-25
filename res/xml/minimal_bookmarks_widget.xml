@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:minWidth="294dp"
+	android:minHeight="368dp"
+	android:updatePeriodMillis="86400000"
+	android:initialLayout="@layout/minimal_bookmarks_layout"
+	android:configure="com.metatroid.minimal.bookmarks.Configure">
+</appwidget-provider>
